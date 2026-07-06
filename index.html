@@ -17,7 +17,8 @@
   }
 
   .page {
-    width: 210mm;
+    width: 100%;
+    max-width: 210mm;
     min-height: 297mm;
     margin: 0 auto;
     background: white;
@@ -422,6 +423,50 @@
     .footer-item { font-size: 11px; }
   }
 
+  /* DESKTOP */
+  @media (min-width: 1024px) {
+    body {
+      background: radial-gradient(circle at 15% 0%, rgba(26,127,212,0.10), transparent 45%),
+                  radial-gradient(circle at 100% 100%, rgba(0,180,216,0.10), transparent 40%),
+                  #e9eef4;
+      padding: 52px 24px;
+    }
+
+    .page {
+      max-width: 1140px;
+      min-height: unset;
+      border-radius: 20px;
+      box-shadow: 0 30px 70px -18px rgba(15,76,129,0.30), 0 10px 24px rgba(15,76,129,0.08);
+    }
+
+    .hero {
+      padding: 44px 60px 32px;
+      border-radius: 20px 20px 0 0;
+    }
+    .hero h1 { font-size: 32px; }
+    .hero-subtitle { font-size: 15px; }
+    .hero-stats { gap: 36px; }
+    .stat-number { font-size: 24px; }
+
+    .tabs-nav { padding: 0 60px; }
+    .tab-btn { padding: 15px 30px; font-size: 13.5px; }
+
+    .content { padding: 36px 60px 52px; }
+
+    .section-title { font-size: 17px; }
+
+    .budget-summary { gap: 18px; margin-bottom: 20px; }
+    .bcard { padding: 18px 20px; border-radius: 14px; }
+    .bcard-value { font-size: 19px; }
+    .bcard-main .bcard-value { font-size: 22px; }
+
+    thead th { padding: 12px 16px; font-size: 11.5px; }
+    tbody td { padding: 11px 16px; font-size: 13px; }
+
+    .footer { padding: 20px 26px; }
+    .footer-item { font-size: 12px; }
+  }
+
   /* PRINT */
   @media print {
     body { background: white; }
@@ -434,7 +479,7 @@
     tr { page-break-inside: avoid; }
   }
 </style>
-<meta property="og:title" content="Kế Hoạch Du Lịch Hạ Long 2N1Đ - Đoàn 4 Gia Đình" data-id="th-modified" ><meta property="og:image:width" content="1501" data-id="th-modified" ><meta property="og:image:height" content="1501" data-id="th-modified" ><meta property="og:image:type" content="image/png" data-id="th-modified" ><meta property="og:type" content="website" data-id="th-modified" ></head>
+<meta property="og:title" content="Kế Hoạch Du Lịch Hạ Long 2N1Đ - Đoàn 4 Gia Đình" data-id="th-modified" ><meta property="og:image" content="https://tiiny.host/assets/logo-purple-bg.png" data-id="th-modified" ><meta property="og:image:width" content="1501" data-id="th-modified" ><meta property="og:image:height" content="1501" data-id="th-modified" ><meta property="og:image:type" content="image/png" data-id="th-modified" ><meta property="og:url" content="https://brown-nelle-84.tiiny.site/" data-id="th-modified" ><meta property="og:type" content="website" data-id="th-modified" ><script defer data-domain="brown-nelle-84.tiiny.site" src="https://analytics.tiiny.net/js/plausible.js"></script><script type="text/javascript" src="https://tiiny.host/ad-script.js"></script></head>
 <body>
 <div class="page">
 
