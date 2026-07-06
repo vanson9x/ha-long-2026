@@ -1,2 +1,815 @@
-429: Too Many Requests
-For more on scraping GitHub and how it may affect your rights, please review our Terms of Service (https://docs.github.com/en/site-policy/github-terms/github-terms-of-service).
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-id="th-modified">Kế Hoạch Du Lịch Hạ Long 2N1Đ - Đoàn 4 Gia Đình</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Be Vietnam Pro', 'Segoe UI', Arial, sans-serif;
+    background: #f0f4f8;
+    color: #1a202c;
+    font-size: 13px;
+  }
+
+  .page {
+    width: 210mm;
+    min-height: 297mm;
+    margin: 0 auto;
+    background: white;
+  }
+
+  /* HERO */
+  .hero {
+    background: linear-gradient(135deg, #0f4c81 0%, #1a7fd4 50%, #00b4d8 100%);
+    color: white;
+    padding: 36px 40px 28px;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -40px; right: -40px;
+    width: 200px; height: 200px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.08);
+  }
+  .hero::after {
+    content: '';
+    position: absolute;
+    bottom: -60px; left: 60px;
+    width: 280px; height: 280px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.05);
+  }
+  .hero-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .hero-badge {
+    background: rgba(255,255,255,0.2);
+    border: 1px solid rgba(255,255,255,0.35);
+    border-radius: 20px;
+    padding: 5px 14px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    backdrop-filter: blur(4px);
+  }
+  .hero-date {
+    text-align: right;
+    font-size: 12px;
+    opacity: 0.85;
+    line-height: 1.6;
+  }
+  .hero h1 {
+    font-size: 28px;
+    font-weight: 800;
+    margin-top: 16px;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+  }
+  .hero h1 span { color: #ffd166; }
+  .hero-subtitle {
+    margin-top: 8px;
+    font-size: 14px;
+    opacity: 0.88;
+    font-weight: 400;
+  }
+  .hero-stats {
+    display: flex;
+    gap: 24px;
+    margin-top: 22px;
+    padding-top: 18px;
+    border-top: 1px solid rgba(255,255,255,0.2);
+  }
+  .stat { text-align: center; }
+  .stat-number {
+    font-size: 22px;
+    font-weight: 800;
+    color: #ffd166;
+    line-height: 1;
+  }
+  .stat-label {
+    font-size: 10px;
+    opacity: 0.8;
+    margin-top: 3px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .stat-divider {
+    width: 1px;
+    background: rgba(255,255,255,0.2);
+    align-self: stretch;
+  }
+
+  /* TABS */
+  .tabs-nav {
+    display: flex;
+    background: #1a202c;
+    padding: 0 40px;
+    gap: 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  .tab-btn {
+    padding: 14px 28px;
+    background: none;
+    border: none;
+    color: rgba(255,255,255,0.55);
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+    transition: all 0.2s;
+    letter-spacing: 0.3px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+  }
+  .tab-btn:hover {
+    color: rgba(255,255,255,0.85);
+    background: rgba(255,255,255,0.05);
+  }
+  .tab-btn.active {
+    color: #ffd166;
+    border-bottom-color: #ffd166;
+  }
+  .tab-icon { font-size: 15px; }
+
+  /* TAB PANELS */
+  .tab-panel { display: none; }
+  .tab-panel.active { display: block; }
+
+  /* CONTENT */
+  .content { padding: 28px 40px 40px; }
+
+  /* SECTION */
+  .section { margin-bottom: 28px; }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 14px;
+  }
+  .section-icon {
+    width: 34px; height: 34px;
+    border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 16px;
+    flex-shrink: 0;
+  }
+  .icon-budget { background: linear-gradient(135deg, #667eea, #764ba2); }
+  .icon-schedule { background: linear-gradient(135deg, #f093fb, #f5576c); }
+  .section-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #1a202c;
+  }
+  .section-title span {
+    font-size: 12px;
+    font-weight: 400;
+    color: #718096;
+    margin-left: 8px;
+  }
+
+  /* BUDGET CARDS */
+  .budget-summary {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+  .bcard {
+    border-radius: 12px;
+    padding: 14px 16px;
+    border: 1px solid #e2e8f0;
+  }
+  .bcard-main {
+    background: linear-gradient(135deg, #0f4c81, #1a7fd4);
+    color: white;
+    border-color: transparent;
+  }
+  .bcard-label {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    font-weight: 600;
+    opacity: 0.75;
+  }
+  .bcard-main .bcard-label { color: rgba(255,255,255,0.8); }
+  .bcard-value {
+    font-size: 18px;
+    font-weight: 800;
+    margin-top: 4px;
+    color: #1a202c;
+  }
+  .bcard-main .bcard-value { color: #ffd166; font-size: 20px; }
+  .bcard-sub {
+    font-size: 10px;
+    color: #718096;
+    margin-top: 2px;
+  }
+  .bcard-main .bcard-sub { color: rgba(255,255,255,0.7); }
+
+  /* TABLE */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  }
+  thead tr {
+    background: #0f4c81;
+    color: white;
+  }
+  thead th {
+    padding: 10px 12px;
+    text-align: left;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+  }
+  tbody tr:nth-child(even) { background: #f7fafc; }
+  tbody tr:nth-child(odd) { background: white; }
+  tbody tr:hover { background: #ebf8ff; }
+  tbody td {
+    padding: 9px 12px;
+    border-bottom: 1px solid #e8edf2;
+    vertical-align: top;
+    line-height: 1.45;
+  }
+  .total-row {
+    background: linear-gradient(90deg, #0f4c81, #1a7fd4) !important;
+    color: white;
+  }
+  .total-row td {
+    font-weight: 700;
+    font-size: 13px;
+    border: none !important;
+    padding: 11px 12px;
+  }
+  .amount {
+    font-weight: 600;
+    color: #2d6a4f;
+    white-space: nowrap;
+  }
+  .amount-total { color: #ffd166; }
+  .note-cell {
+    font-size: 11px;
+    color: #718096;
+    font-style: italic;
+  }
+  .chip {
+    display: inline-block;
+    padding: 2px 7px;
+    border-radius: 20px;
+    font-size: 10px;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+  .chip-green { background: #c6f6d5; color: #276749; }
+  .chip-blue { background: #bee3f8; color: #2a69ac; }
+  .chip-orange { background: #feebc8; color: #c05621; }
+  .chip-red { background: #fed7d7; color: #c53030; }
+  .chip-purple { background: #e9d8fd; color: #553c9a; }
+
+  /* MAP LINK */
+  .map-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 3px;
+    color: #1a7fd4;
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: 600;
+    font-style: normal;
+    background: #ebf8ff;
+    padding: 2px 7px;
+    border-radius: 20px;
+    border: 1px solid #bee3f8;
+    transition: all 0.15s;
+    white-space: nowrap;
+  }
+  .map-link:hover {
+    background: #1a7fd4;
+    color: white;
+    border-color: #1a7fd4;
+  }
+  .map-link .pin { font-size: 11px; }
+
+  /* SCHEDULE */
+  .day-header {
+    background: linear-gradient(90deg, #1a7fd4, #00b4d8);
+    color: white;
+  }
+  .day-header td {
+    font-weight: 700;
+    font-size: 13px;
+    padding: 9px 12px;
+    border: none;
+    letter-spacing: 0.3px;
+  }
+  .time-cell {
+    font-weight: 600;
+    color: #0f4c81;
+    white-space: nowrap;
+    font-size: 12px;
+  }
+  .activity-main { font-weight: 500; color: #1a202c; }
+  .activity-sub { font-size: 11px; color: #718096; margin-top: 2px; }
+  .highlight-row td { background: #fff8e1 !important; }
+
+  /* FOOTER */
+  .footer {
+    margin-top: 24px;
+    padding: 16px 20px;
+    background: linear-gradient(135deg, #f7fafc, #edf2f7);
+    border-radius: 10px;
+    border-left: 4px solid #1a7fd4;
+  }
+  .footer-title {
+    font-size: 12px;
+    font-weight: 700;
+    color: #0f4c81;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .footer-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4px 20px;
+  }
+  .footer-item {
+    font-size: 11px;
+    color: #4a5568;
+    display: flex;
+    align-items: flex-start;
+    gap: 5px;
+  }
+  .footer-item::before {
+    content: '✓';
+    color: #1a7fd4;
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+
+  /* TABLE WRAP for scroll */
+  .table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; border-radius: 10px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+  .table-wrap table { box-shadow: none; border-radius: 0; }
+
+  /* MOBILE */
+  @media (max-width: 640px) {
+    body { font-size: 12px; }
+
+    .page { width: 100%; min-height: unset; }
+
+    .hero { padding: 22px 16px 18px; }
+    .hero h1 { font-size: 20px; margin-top: 12px; }
+    .hero-subtitle { font-size: 12px; }
+    .hero-badge { font-size: 9px; padding: 4px 10px; }
+    .hero-date { font-size: 11px; }
+    .hero-stats { gap: 12px; margin-top: 14px; padding-top: 12px; flex-wrap: wrap; justify-content: center; }
+    .stat-number { font-size: 17px; }
+    .stat-label { font-size: 9px; }
+    .stat-divider { display: none; }
+
+    .tabs-nav { padding: 0 8px; }
+    .tab-btn { padding: 11px 14px; font-size: 12px; flex: 1; justify-content: center; gap: 5px; }
+    .tab-icon { font-size: 14px; }
+
+    .content { padding: 16px 12px 28px; }
+
+    .section-header { gap: 8px; margin-bottom: 12px; }
+    .section-icon { width: 28px; height: 28px; font-size: 13px; }
+    .section-title { font-size: 14px; }
+    .section-title span { display: block; margin-left: 0; margin-top: 2px; font-size: 11px; }
+
+    .budget-summary { grid-template-columns: 1fr; gap: 8px; margin-bottom: 12px; }
+    .bcard { padding: 12px 14px; border-radius: 10px; }
+    .bcard-value { font-size: 16px; }
+    .bcard-main .bcard-value { font-size: 18px; }
+
+    thead th { font-size: 10px; padding: 8px 10px; }
+    tbody td { padding: 8px 10px; }
+    .note-cell { font-size: 10px; }
+    .chip { font-size: 9px; padding: 2px 6px; }
+
+    .map-link { font-size: 10px; padding: 2px 6px; }
+
+    .time-cell { font-size: 11px; }
+    .activity-main { font-size: 12px; }
+    .activity-sub { font-size: 10px; }
+
+    .day-header td { font-size: 11px; padding: 8px 10px; }
+    .total-row td { font-size: 12px; padding: 10px; }
+
+    .footer { padding: 12px 14px; }
+    .footer-items { grid-template-columns: 1fr; gap: 5px; }
+    .footer-item { font-size: 11px; }
+  }
+
+  /* PRINT */
+  @media print {
+    body { background: white; }
+    .page { width: 210mm; margin: 0 auto; box-shadow: none; }
+    .tabs-nav { display: none; }
+    .tab-panel { display: block !important; }
+    .map-link { color: #1a7fd4 !important; background: none !important; border: none !important; padding: 0 !important; }
+    .table-wrap { overflow: visible; box-shadow: none; }
+    @page { size: A4; margin: 10mm; }
+    tr { page-break-inside: avoid; }
+  }
+</style>
+<meta property="og:title" content="Kế Hoạch Du Lịch Hạ Long 2N1Đ - Đoàn 4 Gia Đình" data-id="th-modified" ><meta property="og:image" content="https://tiiny.host/assets/logo-purple-bg.png" data-id="th-modified" ><meta property="og:image:width" content="1501" data-id="th-modified" ><meta property="og:image:height" content="1501" data-id="th-modified" ><meta property="og:image:type" content="image/png" data-id="th-modified" ><meta property="og:url" content="https://brown-nelle-84.tiiny.site/" data-id="th-modified" ><meta property="og:type" content="website" data-id="th-modified" ><script defer data-domain="brown-nelle-84.tiiny.site" src="https://analytics.tiiny.net/js/plausible.js"></script><script type="text/javascript" src="https://tiiny.host/ad-script.js"></script></head>
+<body>
+<div class="page">
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-top">
+      <div class="hero-badge">🌊 Du Lịch Gia Đình</div>
+      <div class="hero-date">
+        <strong>19 – 20 / 07 / 2025</strong><br>
+        Xuất phát từ Bắc Ninh
+      </div>
+    </div>
+    <h1>Du Lịch <span>Hạ Long</span> 2N1Đ<br>Đoàn 4 Gia Đình</h1>
+    <p class="hero-subtitle">Kế hoạch chi phí & lịch trình chi tiết cho cả đoàn</p>
+    <div class="hero-stats">
+      <div class="stat">
+        <div class="stat-number">4</div>
+        <div class="stat-label">Gia đình</div>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <div class="stat-number">2N1Đ</div>
+        <div class="stat-label">Thời gian</div>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <div class="stat-number">5 triệu</div>
+        <div class="stat-label">/ gia đình</div>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <div class="stat-number">20 triệu</div>
+        <div class="stat-label">Tổng quỹ</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TABS NAV -->
+  <div class="tabs-nav">
+    <button class="tab-btn active" onclick="switchTab('budget', this)">
+      <span class="tab-icon">💰</span> Dự Toán Quỹ Chung
+    </button>
+    <button class="tab-btn" onclick="switchTab('schedule', this)">
+      <span class="tab-icon">📅</span> Lịch Trình Chi Tiết
+    </button>
+  </div>
+
+  <!-- TAB: BUDGET -->
+  <div id="tab-budget" class="tab-panel active">
+    <div class="content">
+      <div class="section">
+        <div class="section-header">
+          <div class="section-icon icon-budget">💰</div>
+          <div>
+            <div class="section-title">Dự Toán Quỹ Chung <span>Mức thu: 5.000.000đ / gia đình × 4</span></div>
+          </div>
+        </div>
+
+        <div class="budget-summary">
+          <div class="bcard bcard-main">
+            <div class="bcard-label">Tổng quỹ chung</div>
+            <div class="bcard-value">20.000.000đ</div>
+            <div class="bcard-sub">5.000.000đ × 4 gia đình</div>
+          </div>
+          <div class="bcard">
+            <div class="bcard-label">Dự kiến chi</div>
+            <div class="bcard-value" style="color:#c05621">17.950.000đ</div>
+            <div class="bcard-sub">Theo kế hoạch đã lập</div>
+          </div>
+          <div class="bcard">
+            <div class="bcard-label">Dự phòng / Dư</div>
+            <div class="bcard-value" style="color:#276749">2.050.000đ</div>
+            <div class="bcard-sub">Liên hoan hoặc chia đều</div>
+          </div>
+        </div>
+
+        <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th style="width:22%">Hạng mục</th>
+              <th style="width:32%">Chi tiết dịch vụ</th>
+              <th style="width:13%;text-align:right">Dự tính (VND)</th>
+              <th style="width:33%">Ghi chú & Định vị</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>🚌 Xe di chuyển</strong></td>
+              <td>Thuê xe 16 chỗ khứ hồi Bắc Ninh – Hạ Long (2 ngày)</td>
+              <td style="text-align:right" class="amount">5.000.000</td>
+              <td class="note-cell">Đã bao gồm xăng xe và phí cao tốc</td>
+            </tr>
+            <tr>
+              <td><strong>🏨 Khách sạn</strong></td>
+              <td>
+                Khách sạn <strong>Jade</strong> – Bãi Cháy<br>
+                <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Jade+Hotel+Bai+Chay+Ha+Long" target="_blank"><span class="pin">📍</span> Xem bản đồ</a>
+              </td>
+              <td style="text-align:right" class="amount">3.650.000</td>
+              <td class="note-cell"><span class="chip chip-green">Đã xác nhận</span> Toàn đoàn 2N1Đ tại Bãi Cháy</td>
+            </tr>
+            <tr>
+              <td><strong>🍱 Bữa trưa 19/07</strong></td>
+              <td>Tự chuẩn bị đồ ăn ở nhà – ăn picnic tại bãi biển + đồ ăn vặt cho các bé trên xe</td>
+              <td style="text-align:right" class="amount">2.000.000</td>
+              <td class="note-cell">Bao gồm đồ ăn vặt, nước uống cho các bé suốt hành trình xe</td>
+            </tr>
+            <tr>
+              <td><strong>🦞 Bữa tối 19/07</strong></td>
+              <td>
+                NH Hải sản <strong>Hồng Hạnh</strong> – Hùng Thắng<br>
+                <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Nha+Hang+Hong+Hanh+Hung+Thang+Ha+Long&query_place_id=ChIJTdYa38FfSjERPkNDk4pmqtg" target="_blank"><span class="pin">📍</span> Xem bản đồ</a>
+              </td>
+              <td style="text-align:right" class="amount">3.900.000</td>
+              <td class="note-cell"><span class="chip chip-red">Đặt trước 3-5 ngày</span></td>
+            </tr>
+            <tr>
+              <td><strong>🍵 Bữa sáng 20/07</strong></td>
+              <td>Quán bún hải sản / bề bề gần KS Jade</td>
+              <td style="text-align:right" class="amount">400.000</td>
+              <td class="note-cell">Tính theo số bát thực tế</td>
+            </tr>
+            <tr>
+              <td><strong>🍚 Bữa trưa 20/07</strong></td>
+              <td>
+                NH <strong>Xuân Viên</strong> – Đông Triều, Quảng Ninh<br>
+                <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Nha+hang+Xuan+Vien+Dong+Trieu+Quang+Ninh" target="_blank"><span class="pin">📍</span> Xem bản đồ</a>
+              </td>
+              <td style="text-align:right" class="amount">1.200.000</td>
+              <td class="note-cell">Cơm gia đình trên đường về (~13h00)<br><span class="chip chip-orange">Đặt món trước 45 phút</span></td>
+            </tr>
+            <tr>
+              <td><strong>🚕 Đi lại nội thành</strong></td>
+              <td>Xe điện / Taxi buổi tối ngày 19/07</td>
+              <td style="text-align:right" class="amount">700.000</td>
+              <td class="note-cell">Ra quán ăn và chợ đêm Bãi Cháy</td>
+            </tr>
+            <tr>
+              <td><strong>🎆 Vui chơi buổi tối</strong></td>
+              <td>
+                Nước uống & đồ ăn vặt tại <strong>Chợ đêm Bãi Cháy</strong> / Pháo hoa<br>
+                <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Bai+Chay+Market+Ha+Long&query_place_id=ChIJVVVV6WZYSjERtuLYVrrJ5z8" target="_blank"><span class="pin">📍</span> Xem bản đồ</a>
+              </td>
+              <td style="text-align:right" class="amount">1.100.000</td>
+              <td class="note-cell">Quỹ chi chung cho các bé đi dạo</td>
+            </tr>
+            <tr>
+              <td><strong>🛡️ Dự phòng chung</strong></td>
+              <td>Nước lọc trên xe & chi phí phát sinh</td>
+              <td style="text-align:right" class="amount">2.050.000</td>
+              <td class="note-cell">Dư cuối chuyến → liên hoan hoặc chia đều</td>
+            </tr>
+            <tr class="total-row">
+              <td colspan="2"><strong>TỔNG CỘNG QUỸ CHUNG</strong></td>
+              <td style="text-align:right" class="amount-total"><strong>20.000.000</strong></td>
+              <td style="font-size:10px;opacity:0.85;">Vé Sun World sáng 20/07: Các nhà tự túc riêng</td>
+            </tr>
+          </tbody>
+        </table>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="footer-title">📋 Lưu ý quan trọng cho cả đoàn</div>
+        <div class="footer-items">
+          <div class="footer-item">Đặt bàn Nhà hàng Hồng Hạnh trước <strong>3-5 ngày</strong></div>
+          <div class="footer-item">Mua vé Sun World tại quầy hoặc app theo chiều cao bé</div>
+          <div class="footer-item">Báo số lượng Nhà hàng Xuân Viên trước <strong>45 phút</strong></div>
+          <div class="footer-item">Vé Sun World: mỗi gia đình <strong>tự túc thanh toán riêng</strong></div>
+          <div class="footer-item">Quỹ dư cuối chuyến (~2.050.000đ) dùng liên hoan hoặc chia đều</div>
+          <div class="footer-item">Xe 16 chỗ phục vụ cả 2 ngày – đã tính phí cao tốc & xăng</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TAB: SCHEDULE -->
+  <div id="tab-schedule" class="tab-panel">
+    <div class="content">
+      <div class="section">
+        <div class="section-header">
+          <div class="section-icon icon-schedule">📅</div>
+          <div>
+            <div class="section-title">Lịch Trình Chi Tiết <span>19/07 – 20/07/2025</span></div>
+          </div>
+        </div>
+
+        <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th style="width:12%">Thời gian</th>
+              <th style="width:48%">Hoạt động & Địa điểm</th>
+              <th style="width:40%">Ghi chú & Chi phí</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="day-header">
+              <td colspan="3">☀️ NGÀY 1 – Thứ Bảy, 19/07/2025 — Bắc Ninh → Hạ Long</td>
+            </tr>
+            <tr>
+              <td class="time-cell">06:30 – 07:00</td>
+              <td>
+                <div class="activity-main">🚌 Xe 16 chỗ đón đoàn tại Bắc Ninh</div>
+                <div class="activity-sub">Khởi hành đi Hạ Long</div>
+              </td>
+              <td class="note-cell">Các gia đình tự túc ăn sáng trước khi lên xe</td>
+            </tr>
+            <tr>
+              <td class="time-cell">10:00</td>
+              <td>
+                <div class="activity-main">🏨 Đến KS Jade – Gửi đồ tại lễ tân</div>
+                <div class="activity-sub">
+                  <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Jade+Hotel+Bai+Chay+Ha+Long" target="_blank"><span class="pin">📍</span> Xem bản đồ</a>
+                </div>
+              </td>
+              <td class="note-cell"><span class="chip chip-green">Đã chốt</span> Gửi đồ lễ tân, chưa check-in – phòng nhận lúc 14:00</td>
+            </tr>
+            <tr>
+              <td class="time-cell">10:00 – 12:00</td>
+              <td>
+                <div class="activity-main">📍 Dạo đường bao biển & Uống cafe</div>
+                <div class="activity-sub">
+                  Cho các bé vận động sau 3-4 tiếng ngồi xe<br>
+                  <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Duong+bao+bien+Ha+Long" target="_blank"><span class="pin">📍</span> Đường bao biển Hạ Long</a>
+                </div>
+              </td>
+              <td class="note-cell">Tự do khám phá khu vực Bãi Cháy</td>
+            </tr>
+            <tr>
+              <td class="time-cell">12:00 – 13:00</td>
+              <td>
+                <div class="activity-main">🍱 Ăn trưa tại bãi biển Bãi Cháy</div>
+                <div class="activity-sub">
+                  Đồ ăn tự chuẩn bị mang từ nhà – picnic ven biển<br>
+                  <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Bai+bien+Bai+Chay+Ha+Long" target="_blank"><span class="pin">📍</span> Bãi biển Bãi Cháy</a>
+                </div>
+              </td>
+              <td class="note-cell"><span class="chip chip-blue">Quỹ chung ~2.000.000đ</span> Gồm đồ ăn vặt trên xe + picnic bãi biển</td>
+            </tr>
+            <tr>
+              <td class="time-cell">13:00 – 14:00</td>
+              <td>
+                <div class="activity-main">🏨 Về KS chờ nhận phòng & tắm tráng</div>
+              </td>
+              <td class="note-cell">Check-in chính thức lúc 14:00</td>
+            </tr>
+            <tr>
+              <td class="time-cell">14:00 – 15:30</td>
+              <td>
+                <div class="activity-main">😴 Nghỉ trưa trong phòng</div>
+              </td>
+              <td class="note-cell">Nạp năng lượng trước khi ra biển buổi chiều</td>
+            </tr>
+            <tr>
+              <td class="time-cell">15:30 – 17:30</td>
+              <td>
+                <div class="activity-main">🏖️ Tự do tắm biển Bãi Cháy</div>
+                <div class="activity-sub">
+                  Cho con dạo biển & xúc cát<br>
+                  <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Bai+bien+Bai+Chay+Ha+Long" target="_blank"><span class="pin">📍</span> Bãi biển Bãi Cháy</a>
+                </div>
+              </td>
+              <td class="note-cell">Chi phí riêng từng gia đình</td>
+            </tr>
+            <tr class="highlight-row">
+              <td class="time-cell">18:30</td>
+              <td>
+                <div class="activity-main">🦞 Ăn tối hải sản – NH Hồng Hạnh</div>
+                <div class="activity-sub">
+                  Đường Hoàng Quốc Việt, Hùng Thắng, Hạ Long<br>
+                  <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Nha+Hang+Hong+Hanh+Hung+Thang+Ha+Long&query_place_id=ChIJTdYa38FfSjERPkNDk4pmqtg" target="_blank"><span class="pin">📍</span> Xem bản đồ</a>
+                </div>
+              </td>
+              <td class="note-cell"><span class="chip chip-blue">Quỹ chung ~3.900.000đ</span><br><span class="chip chip-red">Cần đặt trước 3-5 ngày</span></td>
+            </tr>
+            <tr>
+              <td class="time-cell">20:30 / 21:45</td>
+              <td>
+                <div class="activity-main">🎆 Dạo Chợ đêm Bãi Cháy & Xem pháo hoa</div>
+                <div class="activity-sub">
+                  Phố đi bộ, mua sắm, chụp ảnh đêm<br>
+                  <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Bai+Chay+Market+Ha+Long&query_place_id=ChIJVVVV6WZYSjERtuLYVrrJ5z8" target="_blank"><span class="pin">📍</span> Chợ đêm Bãi Cháy</a>
+                </div>
+              </td>
+              <td class="note-cell"><span class="chip chip-blue">Quỹ chung xe điện + nước ~1.800.000đ</span></td>
+            </tr>
+
+            <tr class="day-header">
+              <td colspan="3">🌅 NGÀY 2 – Chủ Nhật, 20/07/2025 — Hạ Long → Bắc Ninh</td>
+            </tr>
+            <tr>
+              <td class="time-cell">05:15</td>
+              <td>
+                <div class="activity-main">🌄 Đón bình minh tại bãi biển Bãi Cháy</div>
+                <div class="activity-sub">
+                  Đi bộ, chụp ảnh, cho các bé nghịch cát<br>
+                  <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Bai+bien+Bai+Chay+Ha+Long" target="_blank"><span class="pin">📍</span> Bãi biển Bãi Cháy</a>
+                </div>
+              </td>
+              <td class="note-cell">Mát mẻ – khung giờ đẹp nhất trong ngày</td>
+            </tr>
+            <tr>
+              <td class="time-cell">06:30</td>
+              <td><div class="activity-main">🏨 Về KS tắm tráng & thu dọn hành lý</div></td>
+              <td class="note-cell">Xếp vali gọn gàng để check-out sớm</td>
+            </tr>
+            <tr>
+              <td class="time-cell">07:15</td>
+              <td><div class="activity-main">✅ Check-out – Gửi đồ tại lễ tân KS Jade</div></td>
+              <td class="note-cell">Giải phóng phòng trước 11:30</td>
+            </tr>
+            <tr>
+              <td class="time-cell">07:45</td>
+              <td>
+                <div class="activity-main">🍵 Ăn sáng – Bún hải sản / Bún bề bề</div>
+                <div class="activity-sub">Quán gần khách sạn Jade</div>
+              </td>
+              <td class="note-cell"><span class="chip chip-blue">Quỹ chung ~400.000đ</span></td>
+            </tr>
+            <tr class="highlight-row">
+              <td class="time-cell">08:30 – 11:30</td>
+              <td>
+                <div class="activity-main">🎡 Vui chơi tự do tại Sun World Hạ Long</div>
+                <div class="activity-sub">
+                  <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Sun+World+Ha+Long+Complex" target="_blank"><span class="pin">📍</span> Sun World Hạ Long</a>
+                </div>
+              </td>
+              <td class="note-cell"><span class="chip chip-purple">Tự túc riêng</span> Vé theo chiều cao của bé</td>
+            </tr>
+            <tr>
+              <td class="time-cell">11:45</td>
+              <td>
+                <div class="activity-main">🚌 Xe đón tại cổng Sun World</div>
+                <div class="activity-sub">Qua khách sạn lấy hành lý, xuất phát về Bắc Ninh</div>
+              </td>
+              <td class="note-cell">Xếp đồ lên xe và rời Hạ Long</td>
+            </tr>
+            <tr class="highlight-row">
+              <td class="time-cell">12:45 – 13:00</td>
+              <td>
+                <div class="activity-main">🍚 Ăn trưa muộn – NH Xuân Viên (Đông Triều)</div>
+                <div class="activity-sub">
+                  <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Nha+hang+Xuan+Vien+Dong+Trieu+Quang+Ninh" target="_blank"><span class="pin">📍</span> Xem bản đồ</a>
+                </div>
+              </td>
+              <td class="note-cell"><span class="chip chip-blue">Quỹ chung ~1.200.000đ</span><br><span class="chip chip-orange">Đặt món trước 45 phút</span></td>
+            </tr>
+            <tr>
+              <td class="time-cell">14:30</td>
+              <td><div class="activity-main">🚌 Tiếp tục hành trình về Bắc Ninh</div></td>
+              <td class="note-cell">Các bé ngủ trưa trên xe điều hòa</td>
+            </tr>
+            <tr class="total-row">
+              <td class="time-cell" style="color:white"><strong>16:30</strong></td>
+              <td><strong>🏠 Về đến Bắc Ninh – Kết thúc chuyến đi</strong></td>
+              <td style="font-size:11px;opacity:0.88;">Trọn vẹn & an toàn – Hẹn chuyến sau!</td>
+            </tr>
+          </tbody>
+        </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div><!-- /page -->
+
+<script>
+function switchTab(name, btn) {
+  document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('tab-' + name).classList.add('active');
+  btn.classList.add('active');
+}
+</script>
+</body>
+</html>
